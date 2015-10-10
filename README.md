@@ -17,5 +17,5 @@ chmod +x setup.sh
 
 ## Notes
  - Currently only works with BASH
- - After running `setup.sh` make sure to adjust your terminal fonts  
+ - After running `setup.sh` make sure to adjust your terminal fonts to one of the patched powerline fonts found in .fonts 
  - Troubleshoot any issues with powerline-status: https://powerline.readthedocs.org/en/latest/troubleshooting.html#troubleshooting
