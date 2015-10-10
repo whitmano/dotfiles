@@ -9,10 +9,10 @@ This is a personal dotfiles repository, but feel free to have a look around.
 
 ## Running the Setup
 ```
-git clone https://github.com/whitmano/dotfiles.git
-cd dotfiles
-chmod +x setup.sh
-./setup.sh
+$ git clone https://github.com/whitmano/dotfiles.git
+$ cd dotfiles
+$ chmod +x setup.sh
+$ ./setup.sh
 ``` 
 
 ## Notes
