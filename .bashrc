@@ -21,8 +21,12 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 # focus on path for pip for finding powerline bash configuration file
 export PATH=$PATH:/usr/lib/
-. /home/hera/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-
+if [ "$USER" == "hera" ]; then 
+    # {repository_root} doesn't return correct value, hard coded path instead
+    . /home/hera/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+else
+    . {repository_root}/powerline/bindings/bash/powerline.sh
+fi
 
 # If not running interactively, don't do anything
 case $- in

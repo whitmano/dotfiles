@@ -6,7 +6,7 @@
 # --- variables ---
 dir=~/dotfiles # dotfiles directory
 olddir=~/dotfiles_old # old dotfiles backup directory
-files="gitconfig bashrc vimrc vim" # list of files/folders to symlink in homedir
+files=".gitconfig .bash_profile .bashrc .vimrc .vim" # list of files/folders to symlink in homedir
 
 
 # --- script ---
@@ -24,12 +24,13 @@ echo "...done"
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/
+    mv ~/$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    ln -s $dir/$file ~/$file
 done
 
 install_powerline (){
+    cd 
     echo "Cloning repo of fonts patched for powerline"
     git clone https://github.com/powerline/fonts.git
     echo "Changing to the fonts directory"
