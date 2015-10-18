@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # some initial script from http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/ 
-# This script creates symlinks from the home directory to any dotfiles located in ~/dotfiles
+# This script creates symlinks from the home directory to any dotfiles located in ~/dotfiles and a backup of the old dotfiles in ~/dotfiles_old
 
 # --- variables ---
 dir=~/dotfiles # dotfiles directory
