@@ -34,6 +34,15 @@ case $- in
       *) return;;
 esac
 
+# randomly select some ASCII art from the 'banner' folder to print out each time a terminal is opened
+# attempted to keep attribution of work intact
+N=1
+ls ~/dotfiles/banners/ |sort -R |tail -$N |while read file; do
+    cat ~/dotfiles/banners/$file
+done
+
+# ------------------------------------
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
