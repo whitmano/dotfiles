@@ -26,3 +26,15 @@ set foldmethod=indent " fold based on indent level, great for python and other w
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
+" --- SYNTAX COLORING ---
+
+" Filetypes
+augroup filetypedetect
+        au! BufRead,BufNewFile *.vala,*.vapi setfiletype vala
+augroup END
+
+augroup vala
+        autocmd BufRead *.vala,*.vapi set tw=100 efm=%f:%1.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+augroup END
+
