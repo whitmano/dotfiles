@@ -4,8 +4,8 @@
 # This script creates symlinks from the home directory to any dotfiles located in ~/dotfiles and a backup of the old dotfiles in ~/dotfiles_old
 
 # --- variables ---
-dir=~/dotfiles # dotfiles directory
-olddir=~/dotfiles_old # old dotfiles backup directory
+dir=~/dotfiles 
+olddir=~/dotfiles_old 
 files=".gitconfig .bash_profile .bashrc .vimrc .vim" # list of files/folders to symlink in homedir
 
 
@@ -29,23 +29,3 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-install_powerline (){
-    cd 
-    echo "Cloning repo of fonts patched for powerline"
-    git clone https://github.com/powerline/fonts.git
-    echo "Changing to the fonts directory"
-    cd fonts
-    echo "...done"
-    echo "Installing fonts"
-    ./install.sh
-    echo "...done"
-    echo "Removing visible fonts folder"
-    cd ..
-    rm -r fonts
-    echo"...done"
-    echo "Installing powerline-status with pip"
-    pip install powerline-status
-    echo "...done"
-}
-
-install_powerline

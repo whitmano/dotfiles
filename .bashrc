@@ -10,23 +10,7 @@
 # ensure 256 colors
 export TERM=xterm-256color
 
-# -- POWERLINE CONFIG FOR TERMINAL --
-# focus on path for finding powerline-daemon executable
 export PATH=$PATH:/home/$USER/.local/bin
-powerline-daemon -q # start up powerline
-
-# POWERLINE_BASH_*  # recomputes variables more than once
-# powerline variables computed exactly once at start-up
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-# focus on path for pip for finding powerline bash configuration file
-export PATH=$PATH:/usr/lib/
-if [ "$USER" == "hera" ]; then 
-    # {repository_root} doesn't return correct value, hard coded path instead
-    . /home/hera/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-else
-    . {repository_root}/powerline/bindings/bash/powerline.sh
-fi
 
 # If not running interactively, don't do anything
 case $- in
