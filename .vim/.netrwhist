@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =5
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/hera/Downloads'
 let g:netrw_dirhist_2='/home/hera/Documents/Classes/Data Mining/CSE5243/lab2/250_term_vector'
 let g:netrw_dirhist_3='/home/hera/dotfiles/.vim/.vim'
+let g:netrw_dirhist_4='/home/juno/dotfiles/.virtualenvs'

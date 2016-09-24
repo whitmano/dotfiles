@@ -10,6 +10,12 @@
 # ensure 256 colors
 export TERM=xterm-256color
 
+# python virtual environments
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+# when shell starts, activate virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
 export PATH=$PATH:/home/$USER/.local/bin
 
 # If not running interactively, don't do anything
