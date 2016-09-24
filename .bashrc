@@ -150,7 +150,6 @@ xterm*|rxvt*)
             fi
         fi
         if [[ "$__el_LAST_EXECUTED_COMMAND" == "" ]]; then
-ME/.local/bin
             echo "$__el_FIRSTPART"
             return
         fi

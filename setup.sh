@@ -6,7 +6,7 @@
 # --- variables ---
 dir=~/dotfiles 
 olddir=~/dotfiles_old 
-files=".gitconfig .virtualenvs .bash_profile .bashrc .vimrc .vim" # list of files/folders to symlink in homedir
+files=".gitconfig .bash_profile .bashrc .vimrc .vim" # list of files/folders to symlink in homedir
 
 
 # --- script ---
