@@ -10,6 +10,9 @@
 # ensure 256 colors
 export TERM=xterm-256color
 
+# color shell prompt
+force_color_prompt=yes
+
 # python virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
